@@ -21,8 +21,6 @@
         $ime_prezime = "Nepoznati korisnik";
     }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,18 +28,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banka</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container centrirano">
-        <div class = "card text-center">
-            <div class = "card-header">
-                Dobordosli
-            </div>
-            <div class="card-body">
-                <h5 class = "card-title"> Prijavljen korisnik <?php echo $ime_prezime; ?> </h5>
-            </div>
+<div class="container centrirano">
+    <div class="card text-center">
+        <div class="card-header">
+        Dobrodošli
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Pozdrav, <?php echo $imePrezime; ?></h5>
         </div>
     </div>
+ </div>
+
 </body>
 </html>

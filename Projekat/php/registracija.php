@@ -12,8 +12,8 @@
         $broj_telefona = $_POST['broj telefona'];
         $sifra_hash = password_hash($sifra, PASSWORD_DEFAULT);
 
-        $upit = "INSERT INTO korisnici(ime, prezime, email, sifra, datum_rodjenja, adresa, broj_telefona) VALUES ('$ime', '$prezime', '$email', '$sifra_hash', '$datum_rodjenja',
-         '$adresa', '$broj_telefona')";
+        $upit = "INSERT INTO korisnici(ime, prezime, email, sifra, datum_rodjenja, adresa, broj_telefona) 
+        VALUES ('$ime', '$prezime', '$email', '$sifra_hash', '$datum_rodjenja','$adresa', '$broj_telefona')";
 
         if(mysqli_query($conn, $upit)){
 
